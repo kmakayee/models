@@ -1,0 +1,26 @@
+{
+  "claude": {
+    "claude-opus-5": {
+      "web_search": true,
+      "source": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool",
+      "evidence": "The official web-search documentation includes message requests using the exact model claude-opus-5 with the native web_search tool, including a web_search_20250305 example.",
+      "retrieval": "Context7 /websites/platform_claude_en; documentation evidence, not a live model invocation"
+    }
+  },
+  "xai": {
+    "grok-4.6": {
+      "web_search": true,
+      "source": "https://docs.x.ai/developers/grok-4-6.md",
+      "request_example_source": "https://docs.x.ai/developers/tools/advanced-usage.md",
+      "evidence": "The exact model page lists web search support; official examples send model grok-4.6 and tools [{type: web_search}] through the Responses API.",
+      "retrieval": "Context7 /websites/x_ai; documentation evidence, not a live model invocation"
+    },
+    "grok-4.7": {
+      "web_search": true,
+      "source": "https://docs.x.ai/developers/models/grok-4.7",
+      "request_example_source": "https://docs.x.ai/developers/tools/web-search",
+      "evidence": "The official Grok 4.7 model page and tools documentation list web search support; live probe verified tools [{type: web_search}] via the Responses API.",
+      "retrieval": "Official documentation and live backend invocation"
+    }
+  }
+}
